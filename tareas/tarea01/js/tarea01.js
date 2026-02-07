@@ -4,7 +4,7 @@ const esFechaValida = (mes, dia, year) => {
   const meses30Dias = [4, 6, 9, 11];
 
   // Considerar años solo de 4 cifras
-  if (year < 1000 && year > 9999) {
+  if (year < 1000 || year > 9999) {
     return false;
   }
 
